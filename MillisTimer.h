@@ -9,7 +9,7 @@ public:
     reset();
   }
   
-  MillisTimer(int waitTime): waitTime(waitTime)
+  MillisTimer(uint32_t waitTime): waitTime(waitTime)
   {
     reset();
   }
@@ -29,7 +29,7 @@ public:
 
 private:
   unsigned long startTime;
-  int waitTime;
+  uint32_t waitTime;
 };
 
 #endif
